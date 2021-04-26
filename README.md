@@ -32,3 +32,8 @@ return msg;
 ```json
 [{"id":"495eb222.ad195c","type":"papago","z":"fbe560b0.5c19f","name":"naver papago","text":"test","source":"en","target":"ko","creds":"ab9c76d2.e12a18","x":460,"y":200,"wires":[["ad830173.e91b8"]]},{"id":"34af5463.5dc3ac","type":"inject","z":"fbe560b0.5c19f","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":100,"y":200,"wires":[["fb30a421.758b48"]]},{"id":"ad830173.e91b8","type":"debug","z":"fbe560b0.5c19f","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":670,"y":200,"wires":[]},{"id":"fb30a421.758b48","type":"function","z":"fbe560b0.5c19f","name":"","func":"msg.params = {};\n// msg.text = 'nice';\n// msg.source = 'en'\n// msg.target = 'ko'\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":280,"y":200,"wires":[["495eb222.ad195c"]]},{"id":"ab9c76d2.e12a18","type":"naverPapagoApiKey","name":""}]
 ```
+
+## Sample results
+```json
+{"message":{"@type":"response","@service":"naverservice.nmt.proxy","@version":"1.0.0","result":{"srcLangType":"en","tarLangType":"ko","translatedText":"시험해 보다","engineType":"N2MT","pivot":null}}}
+```
