@@ -1,0 +1,14 @@
+{
+  "papago" : {
+    "label" : {
+      "text": "검색어",
+      "source": "원본 언어코드",
+      "target": "목적 언어코드"
+    },
+    "desc" : {
+      "text": "검색어를 입력해 주세요. 번역할 텍스트. 1회 호출 시 최대 5,000자까지 번역할 수 있습니다.",
+      "source": "원본 언어(source language)의 언어 코드",
+      "target": "목적 언어(target language)의 언어 코드"
+    }
+  }
+}

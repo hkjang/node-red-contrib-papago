@@ -1,0 +1,14 @@
+{
+  "papago" : {
+    "label" : {
+      "text": "text",
+      "source": "source",
+      "target": "target"
+    },
+    "desc" : {
+      "text": "text for papago translate",
+      "source": "source language code",
+      "target": "target language code"
+    }
+  }
+}
